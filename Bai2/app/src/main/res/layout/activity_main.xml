@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="23dp"
+        android:layout_height="47dp"
+        android:paddingTop="10dp"
+        android:text="a="
+        android:textSize="20dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/edita"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/edita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edita"
+        android:layout_width="358dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Nhập vào số a"
+
+        android:inputType="number"
+        android:textSize="20dp"
+
+        app:layout_constraintLeft_toRightOf="@id/textView3"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="23dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:paddingTop="10dp"
+        android:text="b="
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/editb"
+        android:layout_width="357dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Nhập vào số b"
+
+        android:inputType="number"
+
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/edita"
+        app:layout_constraintTop_toBottomOf="@+id/edita" />
+
+    <Button
+        android:id="@+id/btnCong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/editb" />
+
+    <Button
+        android:id="@+id/btnTru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/btnCong"
+        app:layout_constraintTop_toTopOf="@+id/btnCong" />
+
+    <Button
+        android:id="@+id/btnNhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="*"
+        app:layout_constraintStart_toEndOf="@+id/btnTru"
+        app:layout_constraintTop_toTopOf="@+id/btnTru" />
+
+    <Button
+        android:id="@+id/btnChia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="/"
+        app:layout_constraintStart_toEndOf="@+id/btnNhan"
+        app:layout_constraintTop_toTopOf="@+id/btnNhan" />
+
+    <TextView
+        android:id="@+id/txtKetQua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"
+        android:text="Reult:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCong" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
