@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:background="#000000"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:text="Tên:"
+        android:textColor="#F7DE07" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="240dp"
+        android:layout_height="56dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <Button
+        android:layout_marginTop="6dp"
+        android:textStyle="bold"
+        android:background="#80F121"
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="56dp"
+        android:text="XONG" />
+</LinearLayout>
